@@ -1,1 +1,30 @@
 /* BASIC STYLES HERE */
+body {
+  user-select: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.title-text {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.snack-img {
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-block {
+  background-color: rgb(40, 40, 40);
+  color: rgb(245, 245, 245);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.title-block {
+  background-color: rgb(40, 40, 40);
+  color: rgb(245, 245, 245);
+}

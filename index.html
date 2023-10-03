@@ -10,6 +10,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css"
     integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <title>vendr</title>
@@ -39,7 +42,62 @@
 
   <!-- SECTION -->
   <main id="router-view">
+
     <!-- PRIMARY VIEWPORT -->
+    <div class="container-fluid">
+
+      <section class="row justify-content-between align-items-center py-3 title-block mb-3">
+        <div class="col-2 fs-1">
+          VENDR
+        </div>
+        <div class="col-4">
+          <section class="row">
+            <div class="col-6 mb-1">
+              <button onclick="app.SnacksController.addMoney(0.25)" class="btn btn-primary">Add $0.25</button>
+            </div>
+            <div class="col-6 mb-1">
+              <button onclick="app.SnacksController.addMoney(1.00)" class="btn btn-primary">Add $1.00</button>
+            </div>
+            <div class="col-6 mb-1">
+              <button onclick="app.SnacksController.addMoney(5.00)" class="btn btn-primary">Add $5.00</button>
+            </div>
+            <div class="col-6 mb-1">
+              <button onclick="app.SnacksController.addMoney(10.00)" class="btn btn-primary">Add $10.00</button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="snackCards" class="row">
+        <!-- <div class="col-3">
+          <div class="card shadow">
+            <img class="snack-img" src="https://www.pngall.com/wp-content/uploads/8/Sample-Watermark-Transparent.png"
+              alt="Test Image">
+            <div class="d-flex justify-content-between p-2 info-block">
+              <div>
+                <p>SnackName</p>
+                <p>Price</p>
+              </div>
+              <button class="btn btn-success">BUY</button>
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <section class="row justify-content-end py-5">
+        <div class="col-4">
+          <div class="rounded info-block p-3 d-flex justify-content-between">
+            <p>Total Money:</p>
+            <p>$ <span id="moneyCount">0.00</span> </p>
+          </div>
+          <div class="border ">
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+
   </main>
 
   <!-- SECTION -->
