@@ -14,6 +14,13 @@ function _drawSnacks() {
   setHTML('snackCards', content)
 }
 
+function _drawMySnacks() {
+  let content = ''
+  AppState.mySnacks.forEach(snack => content += snack.getMySnack)
+
+  setHTML('mySnacks', content)
+}
+
 function _checkSnacks() {
   const snacks = AppState.snacks
   snacks.forEach(snack => {
@@ -48,6 +55,7 @@ export class SnacksController {
       return
     }
     snacksService.buySnack(snackName)
+    _drawMySnacks()
   }
   // !SECTION Public methods
 }

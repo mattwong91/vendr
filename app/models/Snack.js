@@ -7,6 +7,11 @@ export class Snack {
     this.enabled = false
   }
 
+  get getMySnack() {
+    return `
+      <p>${this.name}</p>
+    `
+  }
   get getSnackCard() {
     if (this.enabled) {
       return `
